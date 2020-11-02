@@ -18,5 +18,6 @@ from django.urls import path
 from . import pages
 
 urlpatterns = [
-    path('', pages.form)
+    path('', pages.form),
+    path('reversed/', pages.reverse, name='reverse')
 ]
